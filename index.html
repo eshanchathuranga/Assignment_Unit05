@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" width="device-width, initial-scale:0.1">
+    <title>Sky7 Fashion</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/animation.css">
+</head>
+<body>
+    <header>
+        <h1>Sky7 Fashion</h1>
+        <nav>
+            <ul>
+                <li><a onclick="showSection('#home')" href="#home">Home</a></li>
+                <li><a onclick="showSection('#store')"  href="#store">Store</a></li>
+                <!-- <li><a onclick="showSection('#new')"  href="#new">New</a></li> -->
+                <li><a onclick="showSection('#login')" href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<!-- Home Section -->
+ <!-- remove style -->
+        <section id="home" class="home" style="display: none;">
+           <div class="container">
+                 <div class="welcome">
+                        <div class="welcome-text">
+                            <h1>Welcome to Sky7 Fashion</h1>
+                        <p>Get the best fashion items at the best price</p>
+                        <button onclick="showSection('#store')">Shop Now</button>
+                        </div>                        
+                 </div>
+                 <div class="photos">
+                    <img class="hidden" src="./images/images/vectors/vector_02.png" alt="">
+                    <img class="hidden" src="./images/images/vectors/vector_03.png" alt="">
+                    <img class="hidden" src="./images/images/vectors/vector_04.png" alt="">
+                    <img class="hidden" src="./images/images/vectors/vector_05.png" alt="">
+                    <img class="hidden" src="./images/images/vectors/vector_06.png" alt="">
+                    <img class="hidden" src="./images/images/vectors/vector_07.png" alt="">
+                 </div>
+           </div>
+        </section>
+<!-- End Home Section -->
+<!-- Start Store Section -->
+ <!-- add Style -->
+        <section id="store" class="store" >               
+                    <div class="head">
+                        <div>                         
+                        <p>Get the best fashion items at the best price</p>
+                        </div>
+                    </div>
+                <div class="item-list-menu">
+                    <h2>Catogery</h2>
+                        <button onclick="showCat('#womens')">Women's</button>
+                        <button onclick="showCat('#mens')">Men's</button>
+                        <button onclick="showCat('#kids')">Kid's</button>                   
+                </div> 
+<!-- Womens cloths list -->
+<div id="womens" class="cat">
+                 <div class="he-cat">
+                    <button onclick="showList('#dresses')">Dresses</button>
+                    <button onclick="showList('#tops')">Tops</button>
+                    <button onclick="showList('#tshirt')">T-Shirt</button>
+                    <button onclick="showList('#jeans')">Jeans</button>
+                 </div>
+                 <!-- desses -->
+                    <div class="list" id="dresses">
+                             <div class="card">
+                            <img src="./images/items/women-item01.jpg" alt="">
+                            <div class="details">
+                                  <h3>strap-long-dress</h3>
+                                  <p>RS.2000.00</p>
+                                  <button>Get</button>
+                            </div>
+                            </div>
+                            <div class="card">
+                                 <img src="./images/items/women-item01.jpg" alt="">
+                            <div class="details">
+                                   <h3>strap-long-dress</h3>
+                                   <p>RS.2000.00</p>
+                                   <button>Get</button>
+                            </div>
+                            </div>
+                            <div class="card">
+                                 <img src="./images/items/women-item01.jpg" alt="">
+                            <div class="details">
+                                    <h3>strap-long-dress</h3>
+                                    <p>RS.2000.00</p>
+                                    <button>Get</button>
+                            </div>
+                            </div>
+                            <div class="card">
+                                 <img src="./images/items/women-item01.jpg" alt="">
+                               <div class="details">
+                                     <h3>strap-long-dress</h3>
+                                     <p>RS.2000.00</p>
+                                     <button>Get</button>
+                                 </div>
+                            </div>
+                            <div class="card">
+                                   <img src="./images/items/women-item01.jpg" alt="">
+                                <div class="details">
+                                         <h3>strap-long-dress</h3>
+                                         <p>RS.2000.00</p>
+                                         <button>Get</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                   <img src="./images/items/women-item01.jpg" alt="">
+                                <div class="details">
+                                         <h3>strap-long-dress</h3>
+                                         <p>RS.2000.00</p>
+                                         <button>Get</button>
+                                </div>
+                            </div>
+                        </div>
+    <!-- Tops -->
+    <div class="list" id="tops" style="display: none;">
+                <div class="card">
+                     <img src="./images/items/women-item02.jpg" alt="">
+                    <div class="details">
+                        <h3>strap-long-dress</h3>
+                        <p>RS.2000.00</p>
+                        <button>Get</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/items/women-item02.jpg" alt="">
+                   <div class="details">
+                       <h3>strap-long-dress</h3>
+                       <p>RS.2000.00</p>
+                       <button>Get</button>
+                   </div>
+               </div>
+               <div class="card">
+                <img src="./images/items/women-item02.jpg" alt="">
+               <div class="details">
+                   <h3>strap-long-dress</h3>
+                   <p>RS.2000.00</p>
+                   <button>Get</button>
+               </div>
+               </div>
+               <div class="card">
+                     <img src="./images/items/women-item02.jpg" alt="">
+                    <div class="details">
+                        <h3>strap-long-dress</h3>
+                        <p>RS.2000.00</p>
+                        <button>Get</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/items/women-item02.jpg" alt="">
+                   <div class="details">
+                       <h3>strap-long-dress</h3>
+                       <p>RS.2000.00</p>
+                       <button>Get</button>
+                   </div>
+               </div>
+               <div class="card">
+                <img src="./images/items/women-item02.jpg" alt="">
+               <div class="details">
+                   <h3>strap-long-dress</h3>
+                   <p>RS.2000.00</p>
+                   <button>Get</button>
+               </div>
+               </div>
+     </div>
+    <!--  T-shirt    -->
+     <div class="list" id="tshirt" style="display: none;">
+        <div class="card">
+            <img src="./images/items/women-item02.jpg" alt="">
+           <div class="details">
+               <h3>strap-long-dress</h3>
+               <p>RS.2000.00</p>
+               <button>Get</button>
+           </div>
+       </div>
+       <div class="card">
+        <img src="./images/items/women-item02.jpg" alt="">
+       <div class="details">
+           <h3>strap-long-dress</h3>
+           <p>RS.2000.00</p>
+           <button>Get</button>
+       </div>
+       </div>
+       <div class="card">
+        <img src="./images/items/women-item02.jpg" alt="">
+       <div class="details">
+           <h3>strap-long-dress</h3>
+           <p>RS.2000.00</p>
+           <button>Get</button>
+       </div>
+       </div>
+       <div class="card">
+        <img src="./images/items/women-item02.jpg" alt="">
+       <div class="details">
+           <h3>strap-long-dress</h3>
+           <p>RS.2000.00</p>
+           <button>Get</button>
+       </div>
+       </div> 
+       <div class="card">
+        <img src="./images/items/women-item02.jpg" alt="">
+       <div class="details">
+           <h3>strap-long-dress</h3>
+           <p>RS.2000.00</p>
+           <button>Get</button>
+       </div>
+       </div> 
+       <div class="card">
+        <img src="./images/items/women-item02.jpg" alt="">
+       <div class="details">
+           <h3>strap-long-dress</h3>
+           <p>RS.2000.00</p>
+           <button>Get</button>
+       </div>
+       </div> 
+    </div>
+    <!-- Jeans -->
+    <div class="list" id="jeans" style="display: none;">
+        <div class="card">
+            <img src="./images/items/women-item02.jpg" alt="">
+           <div class="details">
+               <h3>strap-long-dress</h3>
+               <p>RS.2000.00</p>
+               <button>Get</button>
+           </div>
+           </div> 
+           <div class="card">
+            <img src="./images/items/women-item02.jpg" alt="">
+           <div class="details">
+               <h3>strap-long-dress</h3>
+               <p>RS.2000.00</p>
+               <button>Get</button>
+           </div>
+           </div> 
+           <div class="card">
+            <img src="./images/items/women-item02.jpg" alt="">
+           <div class="details">
+               <h3>strap-long-dress</h3>
+               <p>RS.2000.00</p>
+               <button>Get</button>
+           </div>
+           </div> 
+           <div class="card">
+            <img src="./images/items/women-item02.jpg" alt="">
+           <div class="details">
+               <h3>strap-long-dress</h3>
+               <p>RS.2000.00</p>
+               <button>Get</button>
+           </div>
+           </div> 
+           <div class="card">
+            <img src="./images/items/women-item02.jpg" alt="">
+           <div class="details">
+               <h3>strap-long-dress</h3>
+               <p>RS.2000.00</p>
+               <button>Get</button>
+           </div>
+           </div> 
+           <div class="card">
+            <img src="./images/items/women-item02.jpg" alt="">
+           <div class="details">
+               <h3>strap-long-dress</h3>
+               <p>RS.2000.00</p>
+               <button>Get</button>
+           </div>
+           </div> 
+    </div>
+</div>
+
+
+
+
+
+
+<!-- mens cloths list -->
+               <div id="mens" class="cat" style="display: none;">
+               <h1>Mens</h1>
+               </div>
+<!-- Kids cloths list -->
+                <div id="kids" class="cat" style="display: none;">
+                <h1>Kids</h1>
+               </div>
+
+
+    
+
+        </section>
+
+        <section id="new" style="display: none;">
+            <h2>Section 3</h2>
+            <!-- Add your content here -->
+        </section>
+        <section id="login" style="display: none;">
+            <h1>login</h1>
+        </section>
+    </main>
+</body>
+<script src="./script/main.js"></script>
+</html>

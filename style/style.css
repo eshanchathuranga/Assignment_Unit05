@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+:root {
+    --light-orenge: rgba(255, 30, 0, 1);
+    --dark-orenge: rgba(255, 30, 0, 0.5);
+    --dimly-blue: rgba(232, 249, 253, 1);
+    --dark-blue: rgba(0, 0, 255, 0.5);
+    --light-blue: rgba(0, 0, 255, 1);
+    --highlight-green: rgba(89, 206, 143, 1);
+    --highlight-green-2: rgba(89, 206, 143, 0.5);
+    --licorise: rgb(27, 18, 18);
+    --color-white: rgba(238, 238, 238, 1);
+    --color-gray: rgba(146, 145, 143, 0.123);
+    --color-orenge: rgba(222, 107, 40, 1);
+    --color-red: rgba(255, 30, 0, 1);
+    --color-light-blue: rgba(67, 134, 150, 1);
+    --color-blue: rgba(35, 59, 102, 1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Playwrite GB S", sans-serif;
+    background-color: var(--color-white);
+}
+header {
+    color: var(--licorise);
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px var(--light-orenge);
+}
+/* ****Hidden & Active**** */
+.hidden {
+    display: none;
+}
+.active {
+    display: block;
+}
+/* ***End Hiden & Active**** */
+/* *******Header********* */
+header h1 {
+    font-size: 1.3rem;
+    margin: 0 10px;
+    font-weight: 700;
+    color: var(--licorise);
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+header nav ul li {
+    margin: 0 10px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: var(--licorise);
+    font-weight: 700;
+    padding: 10px;
+}
+header nav ul li a:hover {
+    color: var(--light-orenge);
+    background: var(--light-orenge);
+    color: var(--color-white);
+    border-radius: 40px;
+}
+/* ****End Header**** */
+/* *******Main********* */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Home Section */
+.home {
+     width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/images/backgrounds/background_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .container .welcome {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: slideInRight 1s ease-in-out;
+}
+.home .container .welcome .welcome-text h1 {
+    font-size: 2.5rem;
+    color: var(--light-orenge);
+    font-weight: 700;
+}
+.home .container .welcome .welcome-text p {
+    font-size: 1.2rem;
+    color: var(--licorise);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+.home .container .welcome .welcome-text button {
+    padding: 10px 20px;
+    background: var(--light-orenge);
+    color: var(--color-white);
+    border: solid 2px var(--light-orenge);
+    border-radius: 40px;
+    font-family: "Playwrite GB S", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+.home .container .welcome .welcome-text button:hover {
+    padding: 10px 20px;
+    background: var(--color-white);
+    color: var(--light-orenge);
+    border: solid 2px var(--light-orenge);
+    border-radius: 40px;
+    font-family: "Playwrite GB S", sans-serif;
+    animation: bounsed 1s ease-in-out;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+.home .container .photos {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .container .photos img {  
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    animation: slideInLeft 1s ease-in-out;
+}
+/* End Home Section */
+/* Store Section */
+.store {
+    width: 100%;
+    height: 100vh;
+}
+.store .head {
+    width: 100%;
+    height: 80%;
+    background-image: url('../images/images/backgrounds/621d208592a9c10001653fc8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 30px 30px;
+}
+.store .head p {
+    font-size: 2.5rem;
+    color: var(--light-orenge);
+    font-weight: 1000;
+    text-align: center;
+}
+.store .item-list-menu {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.store .item-list-menu h2 {
+    font-size: 2rem;
+    color: var(--licorise);
+    font-weight: 700;
+    margin: 15px 15px;
+}
+
+.store .item-list-menu button {
+    text-decoration: none;
+    color: var(--licorise);
+    font-weight: 700;
+    padding: 10px;
+    margin: 0 30px; 
+    border: none;
+    border-radius: 40px;
+}
+.store .item-list-menu button:hover{
+    color: var(--light-orenge);
+    background: var(--light-orenge);
+    color: var(--color-white);
+ /*   transition: transform 0.3s ease-in-out; */
+    
+}
+.store .item-list-menu button .active {
+    color: var(--light-orenge);
+    background: var(--light-orenge);
+    color: var(--color-white);
+}
+.cat {
+    display: block;
+}
+.cat .he-cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cat .he-cat button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    font-weight: 500;
+    color: var(--licorise);
+}
+.cat .he-cat button:hover {
+    background: var(--light-orenge);
+}
+.cat .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cat .list .card {
+    position: relative;
+    object-position: center;
+    object-fit: cover;
+    margin: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cat .list .card img {
+    width: 250px;
+    height: 300px;
+    border: solid 1px var(--licorise);
+}
+.cat .list .card .details {
+    text-align: center;
+}
+.cat .list .card .details h3 {
+    font-size: 1.5rem;
+    color: var(--licorise);
+    font-weight: 700;
+    margin: 10px;
+}
+.cat .list .card .details p {
+    font-size: 1rem;
+    color: var(--licorise);
+    font-weight: 500;
+    margin: 10px;
+}
+
+
+
+
